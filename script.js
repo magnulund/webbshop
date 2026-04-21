@@ -1,7 +1,7 @@
 let array = [];
 const nycklar = "items"
-
-
+var produktName = ""
+var produktPrice = ""
 function sendToCart(){
     if(window.location.href = "index.html"){
         window.location.assign("utcheckning.html")
@@ -15,5 +15,11 @@ function sendToMain(){
 
 
 function add_shit(){
+    
+
+
+
+
+
     window.localStorage.setItem
 };

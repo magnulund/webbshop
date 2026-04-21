@@ -1,4 +1,3 @@
-
 @media  screen and (max-width: 767px) {
     @font-face {
         font-family: Norse;
@@ -7,20 +6,24 @@
         font-style: normal;
     }
     body{
-        display: grid;
-        grid-template-columns: 2fr;
-        grid-template-rows: 1fr, 2fr, 2fr 1fr;
+        display: flex;
+        flex-direction: column;
         font-family: Norse;
     }
-    #Rubrik{
+    #she_gave_me_header_till_i_footer{
         display: flex;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        justify-content: center;
+        flex-direction: row;
         background-color:rgb(97 97 95);
         border-radius: 20px;
         border: 10px solid rgb(164, 164, 164);
-        
+        justify-content: space-around;
+        position: sticky;
+        top: 10px;
+    }
+    #Rubrik{
+        display: flex;
+        justify-content: center;
+        position:sticky;    
     }
     #rubriktext{
         display: flex;
@@ -28,6 +31,7 @@
         background-color: rgb(164, 164, 164);
         border: 10px solid rgb(164, 164, 164);
         border-radius: 20px;
+        position:sticky;
     }
     #rubrikbild{
         display: flex;
@@ -35,17 +39,20 @@
         grid-row: 1/2;
         align-items: center;
         justify-content: right;
+        position:sticky;
     }
     #cartbild{
         display: flex;
         max-height: 60px;
         border: 10px solid rgb(164, 164, 164);
         border-radius: 20px;
+        position:sticky;
         
     }
     #cartknapp{
         background-color: rgb(164, 164, 164);
         border-radius: 20px;
+        position:sticky;
     }
 
     #knappar{
@@ -56,12 +63,10 @@
     }
     #items{
         display: flex;
-        grid-column: 1/2;
-        grid-row: 2/4;
+        flex-direction:column;
+        align-items: center;
         margin-left: 10px;
         margin-top: 10px;
-        flex-direction: row;
-        justify-content: space-around;
         background-color: rgb(164, 164, 164);
         border: rgb(164, 164, 164) solid 20px;
         border-radius: 20px;
@@ -78,8 +83,6 @@
     }
     .mugg{
         display: flex;
-        grid-column: 1/2;
-        grid-row: 2/4;
         margin-left: 10px;
         background-color: rgb(97 97 95);
         justify-content: center;
@@ -122,17 +125,39 @@
     }
     
     #hattar{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        align-items: center;
     }
     .hatt{
-        display: none;
-
+        display: flex;
+        background-color: rgb(97 97 95);
+        justify-content: center;
+        flex-direction: column;
+        max-width: fit-content;
+        align-items: center;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        height: 300px;
     }
     #hornar{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        align-items: center;
     }
     .horn{
-        display: none;
+        display: flex;
+        margin-left: 10px;
+        background-color: rgb(97 97 95);
+        justify-content: center;
+        flex-direction: column;
+        max-width: fit-content;
+        align-items: center;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        height: 300px;
     }
 
     #subway{
@@ -158,19 +183,27 @@
         font-style: normal;
     }
     body{
-        display: grid;
-        grid-template-columns: 2fr, 2fr;
-        grid-template-rows: 1fr, 2fr, 2fr 1fr;
+        display: flex;
+        flex-direction: column;
         font-family: Norse;
+    }
+    #she_gave_me_header_till_i_footer{
+        display: flex;
+        flex-direction: row;
+        background-color:rgb(97 97 95);
+        border-radius: 20px;
+        border: 10px solid rgb(164, 164, 164);
+        justify-content: space-around;
+        position: sticky;
+        top: 10px;
     }
     #Rubrik{
         display: flex;
-        grid-column: 1/3;
-        grid-row: 1/2;
         justify-content: center;
         background-color:rgb(97 97 95);
         border-radius: 20px;
         border: 10px solid rgb(164, 164, 164);
+        width: 300px;
         
     }
     #rubriktext{
@@ -181,8 +214,6 @@
     }
     #rubrikbild{
         display: flex;
-        grid-column: 2/3;
-        grid-row: 1/2;
         align-items: center;
         justify-content: center;
     }
@@ -206,11 +237,9 @@
     }
     #items{
         display: flex;
-        grid-column: 1/3;
-        grid-row: 2/4;
         margin-left: 10px;
         margin-top: 10px;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         background-color: rgb(164, 164, 164);
         border: rgb(164, 164, 164) solid 20px;
@@ -219,17 +248,13 @@
     }
     #muggar{
         display: flex;
-        grid-column:1/2 ;
-        flex-direction: column;
+        flex-direction: row;
         width: 50%;
         align-items: center;
-
-
+        margin-left:100px ;
     }
     .mugg{
         display: flex;
-        grid-column: 1/2;
-        grid-row: 2/4;
         margin-left: 10px;
         background-color: rgb(97 97 95);
         justify-content: center;
@@ -239,20 +264,23 @@
         border-radius: 10px;
         margin-bottom: 5px;
         height: 300px;
-
-
-
     }
     .images{
         display: flex;
         max-width: fit-content;
+        min-height: 150px;
+        max-height: 150px;
+    }
+    .imagecontainer{
+        display: flex;
+        justify-content: center;
+        background-color:white;
         margin-bottom: 5px;
         border-radius: 20px;
         max-width: 300px;
         min-width: 300px;
         min-height: 150px;
         max-height: 150px;
-        
     }
     .Buy{
         background-color: rgb(164, 164, 164);
@@ -272,15 +300,33 @@
     
     #hattar{
         display: flex;
-        grid-column:2/3 ;
-        flex-direction: column;
+        flex-direction: row;
         width: 50%;
         align-items: center;
+        margin-left:100px ;
     }
     .hatt{
         display: flex;
-        grid-column: 2/3;
-        grid-row: 2/4;
+        background-color: rgb(97 97 95);
+        justify-content: center;
+        flex-direction: column;
+        max-width: fit-content;
+        align-items: center;
+        margin-left: 10px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        height: 300px;
+    }
+    #hornar{
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        align-items: center;
+        margin-left: 100px;
+    }
+    .horn{
+        display: flex;
+        margin-left: 10px;
         background-color: rgb(97 97 95);
         justify-content: center;
         flex-direction: column;
@@ -288,28 +334,18 @@
         align-items: center;
         border-radius: 10px;
         margin-bottom: 5px;
-        height: 300px;
-
-    }
-    #hornar{
-        display: none;
-    }
-    .horn{
-        display: none;
+        height: 300px;  
+        min-width: 300px;
     }
 
     #subway{
         display: none;
-
-
     }
     #footer{
         display: flex;
         background-color: rgb(164, 164, 164);
         border-radius: 20px;
         margin-top: 10px;
-        grid-column: 1/3;
-        grid-row: 4/5;
         justify-content: center;
     }
 }
@@ -326,15 +362,25 @@
         grid-template-rows: 1fr, 2fr, 2fr 1fr;
         font-family: Norse;
     }
+    #she_gave_me_header_till_i_footer{
+        display: flex;
+        flex-direction: row;
+        grid-row: 1/2;
+        grid-column: 1/6;
+        background-color:rgb(97 97 95);
+        border-radius: 20px;
+        border: 10px solid rgb(164, 164, 164);
+        justify-content: space-around;
+        position: sticky;
+        top: 10px;
+    }
     #Rubrik{
         display: flex;
-        grid-column: 1/6;
-        grid-row: 1/2;
         justify-content: center;
         background-color:rgb(97 97 95);
         border-radius: 20px;
         border: 10px solid rgb(164, 164, 164);
-        
+        width: 300px;
     }
     #rubriktext{
         display: flex;
@@ -354,13 +400,11 @@
         max-height: 60px;
         border: 10px solid rgb(164, 164, 164);
         border-radius: 20px;
-        
     }
     #cartknapp{
         background-color: rgb(164, 164, 164);
         border-radius: 20px;
     }
-
     #knappar{
         display: flex;
         grid-column: 1/2;
@@ -396,18 +440,16 @@
         flex-direction: row;
         background-color: rgb(164, 164, 164);
         border: rgb(164, 164, 164) solid 20px;
-        border-radius: 20px;
-        
+        border-radius: 20px; 
+        min-height: 80%;
     }
     #muggar{
         display: flex;
         grid-column:2/3 ;
         flex-direction: column;
         margin-left: 50px;
-        width: 20%;
+        width: 200px;
         align-items: center;
-
-
     }
     .mugg{
         display: flex;
@@ -422,20 +464,16 @@
         border-radius: 10px;
         margin-bottom: 5px;
         height: 300px;
-        width: 200px;
-
-
+        min-width: 300px;
     }
     .images{
         display: flex;
-        max-width: fit-content;
         margin-bottom: 5px;
         border-radius: 20px;
         max-width: 200px;
         min-height: 200px;
         min-height: 150px;
         max-height: 150px;
-        
     }
     .Buy{
         background-color: rgb(164, 164, 164);
@@ -443,7 +481,6 @@
         flex-direction: row;
         justify-content: space-around;
         border-radius: 10px;
-        
     }
     .button{
         background-color: rgb(164, 164, 164);
@@ -451,7 +488,6 @@
         margin-left: 10px;
         font-family: Norse;
     }
-    
     #hattar{
         display: flex;
         grid-column:3/4 ;
@@ -464,6 +500,7 @@
         display: flex;
         grid-column: 3/4;
         grid-row: 2/4;
+        margin-left: 10px;
         background-color: rgb(97 97 95);
         justify-content: center;
         flex-direction: column;
@@ -472,7 +509,7 @@
         border-radius: 10px;
         margin-bottom: 5px;
         height: 300px;
-
+        min-width: 300px;
     }
     #hornar{
         display: flex;
@@ -495,7 +532,7 @@
         border-radius: 10px;
         margin-bottom: 5px;
         height: 300px;
-
+        min-width: 300px;
     }
     #footer{
 
@@ -507,7 +544,6 @@
         grid-row: 4/5;
         justify-content: center;
     }
-
     #subway{
         display: flex;
         grid-row: 2/4;

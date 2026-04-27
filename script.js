@@ -68,13 +68,11 @@ function displayCart(){
         removeBtn.onclick = function() { removeItem(index) }
         let div = document.createElement("div")
         container.append(div)
-        div.append(img)
         div.append(h2)
+        div.append(img)
         div.append(h3pris)
         div.append(removeBtn)
     }
-    
-
 }
 function removeItem(index){
     array.splice(index, 1)

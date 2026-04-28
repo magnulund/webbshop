@@ -101,11 +101,18 @@
         max-width: fit-content;
         margin-bottom: 5px;
         border-radius: 20px;
+        
+    }
+    .imagecontainer{
+        display: flex;
+        justify-content: center;
+        background-color:white;
+        margin-bottom: 5px;
+        border-radius: 20px;
         max-width: 300px;
         min-width: 300px;
         min-height: 150px;
         max-height: 150px;
-        
     }
     .Buy{
         background-color: rgb(164, 164, 164);
